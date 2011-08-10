@@ -1,7 +1,40 @@
-   Yang dikembangkan:
-   1) Login
-   2) Pengelolaan Pengguna dan Admin
-   3) Pengelolaan Film
-   4) Katalog Film
-   5) Pemesanan Film
-   6) Laporan
+\chapter{Rancangan Aplikasi}
+\section{Aplikasi yang Akan Dikembangkan}
+Buku ini ditujukan untuk Anda yang saat ini berada dalam tataran pemula atau menengah, untuk bergerak ke tataran mahir. Penulis buku ini yakin bahwa dengan memaparkan pengembangan satu jenis aplikasi yang mencakup banyak aspek-aspek penting suatu aplikasi yang sempurna, akan dapat memudahkan tujuan ini tercapai. \textbf{WebRental 2.0} : adalah aplikasi Web yang memberikan fitur rental film digital kepada pemakai menggunakan layanan internet. Pengguna dapat melihat daftar film terbaru, resensinya dan berapa kopi yang masih tersisa untuk dipinjam. Setelah pilihan film disukai, dan dipesan, maka pengguna dapat pergi ke tempat rental untuk mengambil film yang sudah dipesan tersebut. Dengan cara ini, pengguna akan dijamin mendapatkan film yang diinginkannya.
+
+Berikut adalah fitur dari aplikasi yang akan dikembangkan:
+\begin{enumerate}
+\item Login
+\item Katalog Film
+\item Pemesanan Film
+\item Admin : Pengelolaan Film
+\item Admin : Pengelolaan Konfirmasi Pemesanan
+\item Admin : Pengelolaan Pengguna
+\item Admin : Laporan
+\end{enumerate}
+
+\section{Rancangan Antar Muka Aplikasi}
+Merancang aplikasi web, tanpa memiliki bayangan bagaimana sketsa web tersebut, adalah sangat tidak mungkin. Anda sebagai pengembang web ini, pasti sudah memiliki bayangan gambar aplikasi yang akan dikembangkan, meskipun bayangan tersebut masih umum. Mari kita perkirakan sejenak, bagaimana kira-kira tampilan antarmuka aplikasi yang akan dikembangkan ini.
+\subsection{Homepage}
+Tampilan yang dilihat pemakai pertama kali. Tampilan ini harus segamblang mungkin menjelaskan apa yang bisa dilakukan oleh pengunjung. Kira-kira seperti inilah rancangan halaman utama kita. 
+\subsection{Login}
+Jendela login sudah sangat umum dikenali oleh pengguna web. Dua kotak input Username dan password, beserta satu tombol Login, sudah sangat familiar. 
+\subsection{Katalog Film}
+Menampilkan film-film yang dapat dijelajahi dengan mudah oleh pengunjung. Dapat dilihat resensi, rating, gambar, dan mungkin trailernya.
+\subsection{Pemesanan Film}
+Setelah menyukai film tertentu, saatnya bagi pengunjung film untuk memesan untuk memilih film ini. 
+\subsection{Admin : Pengelolaan Film}
+Hanya admin yang berhak menggunakan modul ini.
+Disini Admin dapat menambah, ubah dan hapus film.
+\subsection{Admin : Pengelolaan Konfirmasi Pemesanan}
+Hanya admin yang berhak menggunakan modul ini.
+Disini Admin dapat mengkonfirmasi pemesanan film oleh pengguna
+\subsection{Admin : Pengelolaan Pengguna}
+Hanya admin yang berhak menggunakan modul ini.
+Disini Admin dapat menambah, ubah dan hapus pengguna.
+\subsection{Admin : Laporan}
+Hanya admin yang berhak menggunakan modul ini.
+Disini Admin dapat menampilkan laporan yang berhubungan dengan total nilai transaksi dan mencetak tampilan katalog film untuk kebutuhan display katalog.
+
+Perhatikan bahwa modul admin dengan tajuk pengelolaan merupakan pertanda bahwa modul tersebut merupakan modul CRUD : Create, Read, Update dan Delete. Merupakan standar dari semua aplikasi yang berhubungan dengan basis data.
+
