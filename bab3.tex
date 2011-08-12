@@ -1,1 +1,41 @@
-Aplikasi adalah aplikasi pemesanan film berbasis web 2.0
+\chapter{Memulai dengan Hello World!}
+Catatan yang perlu diingat adalah, aplikasi hanya bisa dikoding jika desainnya sudah ada terlebih dahulu. Desain / rancangan tersebut tidak perlu sempurna, sekedar cukup mengetahui siapa pengguna aplikasi ini, dan apa fitur yang diharapkan masing-masing pengguna pada aplikasi ini, maka itu sudah cukup. Karena pada bab yang sebelumnya Anda sudah mengetahui hal-hal tersebut, maka disini sudah saatnya Anda segera memulai mengkoding aplikasi.
+\section{Persiapan Sistem}
+Persiapan sistem yang dimaksud adalah software yang harus diinstal agar Anda bisa segera mengembangkan aplikasi ini, yaitu :
+\begin{enumerate}
+\item Apache HTTP WebServer
+\item PHP 5.x
+\item MySQL Server 5.x
+\item IDE/Editor teks/Web Designer
+\end{enumerate}
+Point dari 1 s/d 3, memiliki kemudahan dalam instalasi, karena kombinasi tiga teknologi tersebut merupakan formula yang sudah populer untuk pengembangan aplikasi web, yang disebut dengan *AMP. Tanda bintang bisa Anda gantikan dengan L untuk Linux, atau W untuk Windows, atau X untuk kedua-duanya. Anda bisa mempergunakan paket instalasi XAMPP untuk secara sekaligus menginstalasi paket tersebut. 
+
+Untuk kategori keempat, yaitu IDE/Editor Teks/Web Designer, merupakan pilihan yang Anda tentukan berdasarkan kebutuhan dan persiapan Anda. Ingat bahwa usahakan mempergunakan software Open Source, karena kalau tidak, maka Anda harus membayar untuk dapat mempergunakan software berbayar tersebut. Saya menggandrungi menggunakan Emacs sebagai Editor teks serba guna yang juga dapat dipergunakan untuk mengembangkan aplikasi ini. Namun ia, sebagaimana editor teks lainnya memiliki kekurangan dalam hal visualisasi halaman web yang sedang dirancang. Untuk hal ini, Anda akan sangat terbantu jika mempergunakan Adobe Dreamweaver.
+\subsection{Mac OS X}
+TODO : with screenshot
+\subsection{Linux Ubuntu}
+\subsection{Windows}
+\section{Hello World!}
+Hello world! adalah mantra ajaib yang menandakan langkah pertama Anda di dalam suatu dunia pemrograman yang baru. Maka, mari kita mulai...
+
+Ketikkan kode di bawah ini menggunakan text editor yang Anda pilih :
+\begin{verbatim}
+<? echo "Hello world!"; ?>
+\end{verbatim}
+
+Simpan ke file dengan nama index.php dan letakkan ke dalam folder helloworld pada folder htdocs Anda. Jalankan aplikasi browser yang Anda sukai dan masukkan alamat \begin{verbatim}http://localhost/helloworld\end{verbatim}. 
+
+TODO : Gambar
+
+Perhatikan bahwa Anda tidak harus menyertakan nama file yang akan dibuka jika nama file tersebut adalah index.php (atau index.htm,index.html). Namun jika Anda menyimpan file tersebut dengan nama selain index.php, misalkan Anda simpan dengan nama file helloworld.php, maka pada browser Anda harus menyertakan nama file yang lengkap, yaitu :
+
+\begin{verbatim}http://localhost/helloworld/helloworld.php\end{verbatim}
+
+Selamat! Anda sudah melakukan langkah pertama di dunia pemrograman PHP!
+\section{Hello World! dengan CodeIgniter}
+Unduh terlebih dahulu CodeIgniter di situs \begin{verbatim}http://www.codeigniter.com\end{verbatim}. Extract dan tempatkan di bawah folder htdocs. Aplikasi yang akan kita kembangkan ini akan kita beri nama WebRental, yang akan dapat diakses secara lokal pada alamat http://localhost/webrental. Untuk itu, simpan hasil extract CI ke dalam folder htdocs/webrental. Jalankan! 
+
+Maka Anda akan mendapatkan tampilan berikut :
+TODO : Gambar Halaman Awal
+
+Tampilan tersebut merupakan tampilan CI yang belum Anda kembangkan sama sekali. Mari kita buat halaman Hello World yang sama dengan yang sebelumnya. TODO. Ubahlah controller dan view yang akan menampilkan teks : Hello World!
